@@ -16,6 +16,19 @@ final class ZlinkMetadata {
             List<byte[]> list = values.get(id);
             return list == null || list.isEmpty() ? null : list.get(list.size() - 1);
         }
+        String layout() {
+            StringBuilder out = new StringBuilder();
+            for (Map.Entry<Integer, List<byte[]>> entry : values.entrySet()) {
+                if (out.length() >= 1024) { out.append("..."); break; }
+                out.append(entry.getKey()).append(':');
+                for (byte[] value : entry.getValue()) {
+                    if (out.length() >= 1024) break;
+                    out.append(value.length).append(',');
+                }
+                out.append(' ');
+            }
+            return out.toString().trim();
+        }
         boolean has(int id) { return values.containsKey(id); }
         Long number(int id, int size) throws IOException {
             byte[] data = get(id); if (data == null) return null;

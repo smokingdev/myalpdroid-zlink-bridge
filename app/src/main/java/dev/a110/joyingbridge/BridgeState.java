@@ -10,7 +10,8 @@ final class BridgeState {
     private final LongSupplier clock;
     private boolean enabled;
     private boolean directMode;
-    private String directTurn;
+    private String directTurn, directSecondTurn;
+    private float directSecondAngle;
     private float directAngle;
     private boolean directLeft;
     private Boolean connected;
@@ -38,7 +39,7 @@ final class BridgeState {
     private void clearNav() {
         routeActive = false; routeState = 0; liveDistancePending = false;
         icon = 0; distance = -1; road = ""; lastNav = -1;
-        directTurn = null; directAngle = 0; directLeft = false;
+        directTurn = directSecondTurn = null; directAngle = directSecondAngle = 0; directLeft = false;
     }
     private void clearMedia() {
         title = artist = album = ""; playing = null; playbackEvidence = "unknown";
@@ -132,16 +133,19 @@ final class BridgeState {
         return directMode ? directTurn : mapIcon(icon);
     }
     synchronized void directNavigation(String type, int meters, String nextRoad, float angle,
-                                       boolean left, boolean active, long updatedAt) {
+                                       boolean left, boolean active, long updatedAt, String secondType, float secondAngle) {
         if (!enabled || !directMode || Boolean.FALSE.equals(connected)) return;
         directTurn = type; distance = meters; road = nextRoad; directAngle = angle;
         directLeft = left; routeActive = active; lastNav = updatedAt;
+        directSecondTurn = secondType; directSecondAngle = secondAngle;
     }
     synchronized void directMedia(Media value) {
         if (!enabled || !directMode || Boolean.FALSE.equals(connected)) return;
         title = value.title(); artist = value.artist(); album = value.album(); playing = value.playing();
         playbackEvidence = value.evidence(); durationMs = value.duration(); positionMs = value.position();
     }
+    synchronized String secondNavType() { return navType() == null ? null : directSecondTurn; }
+    synchronized float secondNavAngle() { return secondNavType() == null ? 0 : directSecondAngle; }
     synchronized float navAngle() { return navType() == null ? 0 : directAngle; }
     synchronized boolean navLeft() { return navType() != null && directLeft; }
     synchronized int navDistance() { return navType() == null ? 0 : distance; }
@@ -156,6 +160,7 @@ final class BridgeState {
                 + "\nNavigation: " + (navType() == null ? "inactive / incomplete / unsupported" : navType() + " " + distance + " m")
                 + "; route=" + routeActive + "; route state=" + routeState + "; Joying icon=" + icon + "\nRoad: " + road
                 + "\nDirect ZLink: " + directMode + "; exit angle=" + directAngle + "; left traffic=" + directLeft
+                + "; second turn=" + secondNavType() + "; second angle=" + secondNavAngle()
                 + "\nTrack: " + title + "\nArtist: " + artist + "\nAlbum: " + album
                 + "\nPlayback: " + media().playing + " (" + media().evidence + ")";
     }

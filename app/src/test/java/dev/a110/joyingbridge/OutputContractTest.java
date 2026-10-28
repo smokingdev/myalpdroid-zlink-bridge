@@ -36,6 +36,26 @@ public class OutputContractTest {
         } finally { data.recycle(); reply.recycle(); }
         BridgeRuntime.state.stop(); assertEquals(0L, binder.getAppInfo().getArrivalTime());
     }
+    @Test public void directSecondaryTurnSurvivesParcelContractAndClearsOnStop() throws Exception {
+        BridgeRuntime.state.start(); BridgeRuntime.state.source(true);
+        ZlinkState direct = new ZlinkState(BridgeRuntime.state, android.os.SystemClock::elapsedRealtime);
+        direct.accept(9, ZlinkPackets.maneuver(1, 1, null, 0));
+        direct.accept(9, ZlinkPackets.maneuver(9, 29, -75, 0));
+        direct.accept(8, ZlinkPackets.join(ZlinkPackets.guidance(1, 250), ZlinkPackets.number(13, 9, 2)));
+        AppInfoParams info = BridgeRuntime.appInfo();
+        Parcel parcel = Parcel.obtain();
+        try {
+            info.writeToParcel(parcel, 0); parcel.setDataPosition(0);
+            AppInfoParams restored = AppInfoParams.CREATOR.createFromParcel(parcel);
+            assertEquals("TL", restored.getTurnInfo().getString("next_turn_type"));
+            assertEquals("RNDB2", restored.getTurnInfo().getString("no_speak_next_turn_type"));
+            assertEquals(-75f, restored.getTurnInfo().getFloat("no_speak_next_turn_angle"), 0);
+            assertEquals(0, restored.getTurnInfo().getInt("no_speak_next_turn_distance"));
+        } finally { parcel.recycle(); }
+        BridgeRuntime.state.stop();
+        assertEquals("no type", BridgeRuntime.appInfo().getTurnInfo().getString("no_speak_next_turn_type"));
+        assertEquals(0f, BridgeRuntime.appInfo().getTurnInfo().getFloat("no_speak_next_turn_angle"), 0);
+    }
     @Test public void androidMediaSessionContainsTrackThenPlaybackState() {
         BridgeState state = new BridgeState(() -> 0); state.start();
         state.accept(BridgeStateTest.event("canbus.carstr.update.16", "value", "Title"));

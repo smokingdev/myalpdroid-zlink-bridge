@@ -26,9 +26,10 @@ final class BridgeRuntime {
             turn.putInt("next_turn_distance", state.navDistance());
             turn.putFloat("next_turn_angle", state.navAngle());
             turn.putBoolean("next_turn_possibly_left", state.navLeft());
-            turn.putString("no_speak_next_turn_type", "no type");
+            String second = state.secondNavType();
+            turn.putString("no_speak_next_turn_type", second == null ? "no type" : second);
             turn.putInt("no_speak_next_turn_distance", 0);
-            turn.putFloat("no_speak_next_turn_angle", 0f);
+            turn.putFloat("no_speak_next_turn_angle", state.secondNavAngle());
             return new AppInfoParams(null, null, turn, 0, 0, type == null ? 0L : 1L, false);
         }
     }

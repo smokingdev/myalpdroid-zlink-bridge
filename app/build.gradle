@@ -6,8 +6,8 @@ android {
         applicationId 'net.osmand'
         minSdk 26
         targetSdk 35
-        versionCode 2006
-        versionName '0.3.0'
+        versionCode 2007
+        versionName '0.3.1'
     }
     buildFeatures { aidl true }
     testOptions { unitTests.includeAndroidResources = true }

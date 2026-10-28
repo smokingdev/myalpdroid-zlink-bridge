@@ -54,6 +54,8 @@ To try the richer direct feed, open **Settings** and enable **Use ZLink directly
 
 Direct mode attempts to read music and navigation straight from ZLink. It can forward real roundabout exit angles when ZLink supplies them. Direct access and the resulting cluster graphics still need verification on the head unit; a connected socket alone does not mean metadata is arriving.
 
+For a navigation test drive, use direct mode and include closely spaced turns, a motorway junction with lane guidance, and arrival if practical. Save diagnostics soon after arrival, before restarting the bridge: the log is bounded and older route-start packets can roll out. The log now identifies selected maneuver indices, start/arrival candidates, and field IDs and lengths, while retaining full raw frames for lane-data investigation. Start, arrival, and full lane-specific graphics are not enabled.
+
 If music or navigation stops updating, turn the switch off to return to Joying, then use **Save diagnostics to Downloads**. Switching sources keeps the current log, including the direct connection and decoding information. Starting a new bridge session resets the log.
 
 ## What to expect from navigation
@@ -62,6 +64,7 @@ If music or navigation stops updating, turn the switch off to return to Joying, 
 - Apple Maps and Google Maps have worked in the owner’s tests. Waze did not supply usable navigation data in that test; its support is not confirmed.
 - **Joying mode has no accurate roundabout exit geometry.** Experimental direct ZLink mode forwards a supplied exit angle and driving side to MyAlpDroid. It does not estimate a direction when geometry is missing. This still needs a head-unit drive test.
 - Distance follows the live countdown rather than the segment length or zero placeholder sent with a new maneuver.
+- **Experimental direct mode can forward a second upcoming arrow** when ZLink explicitly selects two maneuvers and supplies supported details for both. Availability and cluster rendering need a drive test.
 - Route transitions clear the previous arrow. Guidance also expires if live distance updates stop, even when route-status messages continue.
 
 ## If something is missing
