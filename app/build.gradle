@@ -1,0 +1,23 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.a110.joyingbridge'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'net.osmand'
+        minSdk 26
+        targetSdk 35
+        versionCode 2006
+        versionName '0.3.0'
+    }
+    buildFeatures { aidl true }
+    testOptions { unitTests.includeAndroidResources = true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint { abortOnError true }
+}
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.14.1'
+}

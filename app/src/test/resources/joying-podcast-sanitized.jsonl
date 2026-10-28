@@ -1,0 +1,50 @@
+{"kind": "callback", "elapsedMs": 42, "fields": {"id": {"type": "String", "value": "main.playerInfo"}, "appId": {"type": "Integer", "value": 8}, "value": {"type": "Integer", "value": -1}, "infoType": {"type": "Integer", "value": 3}}}
+{"kind": "callback", "elapsedMs": 46, "fields": {"id": {"type": "String", "value": "main.appId"}, "value": {"type": "Integer", "value": 0}}}
+{"kind": "callback", "elapsedMs": 48, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": ""}}}
+{"kind": "callback", "elapsedMs": 50, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": ""}}}
+{"kind": "callback", "elapsedMs": 52, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": ""}}}
+{"kind": "zlink_status", "elapsedMs": 70213, "message": "CONNECTED"}
+{"kind": "callback", "elapsedMs": 74098, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Music track"}}}
+{"kind": "callback", "elapsedMs": 74104, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": "Music artist"}}}
+{"kind": "callback", "elapsedMs": 74106, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": "Music album"}}}
+{"kind": "zlink_status", "elapsedMs": 86260, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 86271, "fields": {"id": {"type": "String", "value": "main.appId"}, "value": {"type": "Integer", "value": 10}}}
+{"kind": "callback", "elapsedMs": 88382, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 88385, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 88388, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "null", "value": null}}}
+{"kind": "zlink_status", "elapsedMs": 130688, "message": "MAIN_AUDIO_STOP"}
+{"kind": "zlink_status", "elapsedMs": 131716, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 132321, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter1"}}}
+{"kind": "callback", "elapsedMs": 132324, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": "Podcast name"}}}
+{"kind": "callback", "elapsedMs": 132327, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": "Episode date"}}}
+{"kind": "zlink_status", "elapsedMs": 765263, "message": "MAIN_AUDIO_STOP"}
+{"kind": "zlink_status", "elapsedMs": 771242, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 815491, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter2"}}}
+{"kind": "zlink_status", "elapsedMs": 889865, "message": "MAIN_AUDIO_STOP"}
+{"kind": "zlink_status", "elapsedMs": 950890, "message": "MAIN_AUDIO_START"}
+{"kind": "zlink_status", "elapsedMs": 1531757, "message": "MAIN_AUDIO_STOP"}
+{"kind": "zlink_status", "elapsedMs": 1532402, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 1609309, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter3"}}}
+{"kind": "callback", "elapsedMs": 1784293, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter4"}}}
+{"kind": "zlink_status", "elapsedMs": 2807059, "message": "MAIN_AUDIO_STOP"}
+{"kind": "callback", "elapsedMs": 2807699, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 2807700, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 2807701, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "null", "value": null}}}
+{"kind": "zlink_status", "elapsedMs": 2808751, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 2814287, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter5"}}}
+{"kind": "callback", "elapsedMs": 2814288, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": ""}}}
+{"kind": "callback", "elapsedMs": 2814291, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": ""}}}
+{"kind": "zlink_status", "elapsedMs": 2841918, "message": "MAIN_AUDIO_STOP"}
+{"kind": "zlink_status", "elapsedMs": 2896913, "message": "DISCONNECT"}
+{"kind": "zlink_status", "elapsedMs": 47181022, "message": "CONNECTED"}
+{"kind": "callback", "elapsedMs": 47182969, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 47182970, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 47182971, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "null", "value": null}}}
+{"kind": "callback", "elapsedMs": 47184823, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": ""}}}
+{"kind": "callback", "elapsedMs": 47184825, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": ""}}}
+{"kind": "callback", "elapsedMs": 47184826, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": ""}}}
+{"kind": "zlink_status", "elapsedMs": 47225365, "message": "MAIN_AUDIO_START"}
+{"kind": "callback", "elapsedMs": 47225984, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter5"}}}
+{"kind": "callback", "elapsedMs": 47225989, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.17"}, "value": {"type": "String", "value": "Podcast name"}}}
+{"kind": "callback", "elapsedMs": 47225991, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.23"}, "value": {"type": "String", "value": "Episode date"}}}
+{"kind": "callback", "elapsedMs": 47390423, "fields": {"id": {"type": "String", "value": "canbus.carstr.update.16"}, "value": {"type": "String", "value": "Podcast chapter6"}}}

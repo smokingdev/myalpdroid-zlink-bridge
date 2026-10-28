@@ -1,0 +1,290 @@
+{
+  "keep-left": [
+    {
+      "elapsedMs": 0,
+      "type": 1,
+      "value": 10
+    },
+    {
+      "elapsedMs": 4,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 5,
+      "type": 4,
+      "value": 1100
+    },
+    {
+      "elapsedMs": 7,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 9,
+      "type": 4,
+      "value": 677
+    },
+    {
+      "elapsedMs": 976,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 980,
+      "type": 4,
+      "value": 654
+    }
+  ],
+  "placeholder": [
+    {
+      "elapsedMs": 0,
+      "type": 1,
+      "value": 1
+    },
+    {
+      "elapsedMs": 1,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 3,
+      "type": 4,
+      "value": 0
+    },
+    {
+      "elapsedMs": 4,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 6,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 253,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 254,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 1283,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 1285,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 2266,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 2268,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 3507,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 3508,
+      "type": 4,
+      "value": -1
+    }
+  ],
+  "roundabout": [
+    {
+      "elapsedMs": 0,
+      "type": 1,
+      "value": 60
+    },
+    {
+      "elapsedMs": 2,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 4,
+      "type": 4,
+      "value": 0
+    },
+    {
+      "elapsedMs": 6,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 8,
+      "type": 4,
+      "value": 20
+    },
+    {
+      "elapsedMs": 53,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 54,
+      "type": 4,
+      "value": 300
+    },
+    {
+      "elapsedMs": 55,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 56,
+      "type": 4,
+      "value": 300
+    },
+    {
+      "elapsedMs": 60,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 62,
+      "type": 4,
+      "value": 300
+    }
+  ],
+  "transition": [
+    {
+      "elapsedMs": 0,
+      "type": 11,
+      "value": 5
+    },
+    {
+      "elapsedMs": 3,
+      "type": 4,
+      "value": 10
+    },
+    {
+      "elapsedMs": 365,
+      "type": 1,
+      "value": 1
+    },
+    {
+      "elapsedMs": 367,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 367,
+      "type": 4,
+      "value": 0
+    },
+    {
+      "elapsedMs": 368,
+      "type": 11,
+      "value": 0
+    },
+    {
+      "elapsedMs": 369,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 372,
+      "type": 11,
+      "value": 0
+    },
+    {
+      "elapsedMs": 381,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 382,
+      "type": 11,
+      "value": 3
+    },
+    {
+      "elapsedMs": 382,
+      "type": 4,
+      "value": -1
+    },
+    {
+      "elapsedMs": 384,
+      "type": 1,
+      "value": 1
+    },
+    {
+      "elapsedMs": 389,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 391,
+      "type": 4,
+      "value": 0
+    },
+    {
+      "elapsedMs": 393,
+      "type": 1,
+      "value": 13
+    },
+    {
+      "elapsedMs": 400,
+      "type": 3,
+      "value": "Road"
+    },
+    {
+      "elapsedMs": 404,
+      "type": 4,
+      "value": 0
+    },
+    {
+      "elapsedMs": 413,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 415,
+      "type": 4,
+      "value": 500
+    },
+    {
+      "elapsedMs": 418,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 420,
+      "type": 4,
+      "value": 500
+    },
+    {
+      "elapsedMs": 433,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 434,
+      "type": 4,
+      "value": 500
+    },
+    {
+      "elapsedMs": 435,
+      "type": 11,
+      "value": 1
+    },
+    {
+      "elapsedMs": 436,
+      "type": 4,
+      "value": 500
+    }
+  ]
+}

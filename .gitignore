@@ -1,0 +1,10 @@
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+*.keystore
+dist/
+
+# Standalone diagnostic experiments
+/temporary/
